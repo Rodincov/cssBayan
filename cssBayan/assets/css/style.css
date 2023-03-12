@@ -1,0 +1,57 @@
+body {
+max-width: 60%;
+margin: auto;
+}
+body h1 {
+text-align: left;
+}
+span {
+    background: gray;
+    height: 0.1vh;
+    width: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label_title1,
+.label_title2,
+.label_title3,
+.label_title4,
+.label_title5 {
+
+    font-size: 1em;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.label_title1 h2 {
+    display: block;
+}
+.label_title1 h3 {
+    display: block;
+}
+.label_image1,
+.label_image2,
+.label_image3,
+.label_image4,
+.label_image5 {
+
+    display: none;
+}
+.label_image1:hover,
+.label_image2:hover,
+.label_image3:hover,
+.label_image4:hover,
+.label_image5:hover {
+    display: block;
+}
+.label_title1:hover ~ .label_image1,
+.label_title2:hover ~ .label_image2,
+.label_title3:hover ~ .label_image3,
+.label_title4:hover ~ .label_image4,
+.label_title5:hover ~ .label_image5  {
+    display: block;
+}
